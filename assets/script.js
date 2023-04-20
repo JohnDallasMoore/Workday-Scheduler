@@ -11,7 +11,7 @@ var hours = {
   17: "",
 };
 
-$(function () {
+$(document).ready(function () {
   //Checks for existing items in local storage or uses hours object
   var hasStorage = localStorage.getItem("schedule");
   if (!hasStorage) {
