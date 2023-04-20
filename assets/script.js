@@ -43,7 +43,7 @@ $(function () {
   //evaluates current time to change text area color based on past, present or future time blocks
   $(".time-block").each(function () {
     var hour = parseInt($(this).attr("id").split("-")[1]);
-    var currentHour = dayjs().format("HH");
+    var currentHour = parseInt(dayjs().format("HH"));
     var timeBlockColor = $(this).find("textarea");
 
     if (hour < currentHour) {
