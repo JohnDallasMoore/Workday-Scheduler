@@ -12,8 +12,7 @@ var hours = {
 };
 
 $(function () {
-  
-  //Checks for existing items in local storage or uses hours object 
+  //Checks for existing items in local storage or uses hours object
   var hasStorage = localStorage.getItem("schedule");
   if (!hasStorage) {
     localStorage.setItem("schedule", JSON.stringify(hours));
